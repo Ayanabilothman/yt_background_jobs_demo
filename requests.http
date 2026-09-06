@@ -1,0 +1,30 @@
+
+
+### Demo 1 - EventEmitter (port 4001)
+POST http://localhost:4001/process-image
+Content-Type: application/json
+
+{ "iterations": 30 }
+
+### Demo 1 - bing bong
+GET http://localhost:4001/bing-bong
+
+
+### Demo 2 - BullMQ, worker in the SAME process (port 4002)
+POST http://localhost:4002/process-image
+Content-Type: application/json
+
+{ "iterations": 30 }
+
+### Demo 2 - bing bong
+GET http://localhost:4002/bing-bong
+
+
+### Demo 3 - BullMQ, worker in a SEPARATE process (port 4003)
+POST http://localhost:4003/process-image
+Content-Type: application/json
+
+{ "iterations": 30 }
+
+### Demo 3 - bing bong
+GET http://localhost:4003/bing-bong

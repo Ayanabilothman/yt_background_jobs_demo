@@ -1,0 +1,57 @@
+{
+  "generatedAt": "2026-09-06T05:37:55.389Z",
+  "tool": "autocannon@8.0.0",
+  "config": {
+    "iterationsPerJob": 15,
+    "connections": 10,
+    "durationSecPerPhase": 4,
+    "fireEveryMs": 400,
+    "target": "GET /bing-bong"
+  },
+  "redisUp": false,
+  "demos": [
+    {
+      "key": "demo1",
+      "title": "Demo 1  EventEmitter (same process)",
+      "status": "ok",
+      "jobsFiredDuringLoad": 1,
+      "idle": {
+        "reqPerSec": 9552.4,
+        "totalReq": 47753,
+        "latMean": 0.45,
+        "latP99": 5,
+        "latMax": 14,
+        "non2xx": 0,
+        "errors": 0,
+        "timeouts": 0
+      },
+      "underLoad": {
+        "reqPerSec": 0,
+        "totalReq": 0,
+        "latMean": 0,
+        "latP99": 0,
+        "latMax": 0,
+        "non2xx": 0,
+        "errors": 0,
+        "timeouts": 0
+      },
+      "delta": {
+        "reqPerSecPct": -100,
+        "latencyMeanRatio": null,
+        "eventLoopFullyBlocked": true
+      }
+    },
+    {
+      "key": "demo2",
+      "title": "Demo 2  BullMQ, worker in the SAME process",
+      "status": "skipped",
+      "reason": "needs Redis on 127.0.0.1:6379"
+    },
+    {
+      "key": "demo3",
+      "title": "Demo 3  BullMQ, worker in a SEPARATE process",
+      "status": "skipped",
+      "reason": "needs Redis on 127.0.0.1:6379"
+    }
+  ]
+}

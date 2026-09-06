@@ -1,0 +1,20 @@
+{
+  "name": "background-jobs-demos",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Three ways to run a real image-processing background job behind Express, and how each affects the event loop.",
+  "workspaces": [
+    "demo1-eventemitter",
+    "demo2-bullmq-same-process",
+    "demo3-bullmq-separate-process"
+  ],
+  "scripts": {
+    "start:demo1": "npm start -w demo1-eventemitter",
+    "start:demo2": "npm start -w demo2-bullmq-same-process",
+    "start:demo3": "npm start -w demo3-bullmq-separate-process",
+    "worker:demo3": "npm run worker -w demo3-bullmq-separate-process"
+  },
+  "devDependencies": {
+    "autocannon": "^8.0.0"
+  }
+}
