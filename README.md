@@ -53,3 +53,13 @@ A queue (BullMQ) gives you durability, retries and visibility — but if the
 worker shares the Express process, CPU-bound work still blocks the event loop.
 Only moving the worker to its own process (Demo 3), a `worker_thread`, or a
 process pool actually keeps the API responsive under load.
+
+# License
+
+Copyright © 2026 Aya Nabil. All rights reserved.
+
+This repository is provided for educational and demonstration purposes only.
+
+You may view, clone, and run the code for personal learning.
+
+You may not copy, redistribute, republish, sublicense, or use this code or substantial portions of it in commercial products, paid courses, tutorials, training programs, workshops, or other paid content without prior written permission.
