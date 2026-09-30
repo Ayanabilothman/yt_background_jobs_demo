@@ -56,7 +56,7 @@ process pool actually keeps the API responsive under load.
 
 # License
 
-Copyright © 2026 Aya Nabil. All rights reserved.
+Copyright © 2026 Aya Nabil Othman. All rights reserved.
 
 This repository is provided for educational and demonstration purposes only.
 
